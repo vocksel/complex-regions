@@ -1,5 +1,7 @@
 # ComplexRegions
 
+[![CI](https://github.com/vocksel/complex-regions/actions/workflows/ci.yml/badge.svg)](https://github.com/vocksel/complex-regions/actions/workflows/ci.yml)
+
 This is a package that allows you to define regions in an experience out of BaseParts of any shape or size.
 
 ![A character within a region composed of rectangles and a sphere](example/example.png)
