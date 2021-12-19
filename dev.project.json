@@ -1,0 +1,35 @@
+{
+  "name": "ComplexRegions",
+  "tree": {
+    "$className": "DataModel",
+    "Workspace": {
+      "Regions": {
+        "$path": "example/Regions.rbxmx"
+      },
+      "Platforms": {
+        "$path": "example/Platforms.rbxmx"
+      }
+    },
+    "ReplicatedStorage": {
+      "Packages": {
+        "$path": "Packages",
+        "ComplexRegions": {
+          "$path": "src"
+        }
+      }
+    },
+    "ServerScriptService": {
+      "Tests": {
+        "$path": "tests"
+      }
+    },
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "$className": "StarterPlayerScripts",
+        "Regions": {
+          "$path": "example/Regions.client.lua"
+        }
+      }
+    }
+  }
+}
