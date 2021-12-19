@@ -17,7 +17,7 @@ ComplexRegions = "vocksel/complex-regions@0.1.0
 
 ### Roblox Studio
 
-* Download a copy of the rbxm from the [releases page](https://github.com/AUTHOR_GITHUB/package-template/releases/latest) under the Assets section. 
+* Download a copy of the rbxm from the [releases page](https://github.com/vocksel/complex-regions/releases/latest) under the Assets section. 
 * Drag and drop the file into Roblox Studio to add it to your experience.
 
 ## Creating a Region
