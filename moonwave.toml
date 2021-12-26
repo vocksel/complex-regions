@@ -1,3 +1,8 @@
+classOrder = [
+    "ComplexRegions",
+    "Region",
+]
+
 [home]
 enabled = true
 

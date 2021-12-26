@@ -1,9 +1,91 @@
 local RunService = game:GetService("RunService")
 
+--[=[
+	@class Region
+]=]
 local Region = {}
 Region.ClassName = "Region"
 Region.__index = Region
 
+--[=[
+	@type RegionInstance BasePart | Model
+	@within Region
+
+	The 3D representation of the Region's boundaries. It can either be a single
+	BasePart or a Model composed of several BaseParts that all represent one
+	Region.
+]=]
+
+--[=[
+	@prop name string
+	@within Region
+
+	The name of the Region. This is used when calling `tostring()` on the Region instance.
+
+	(Default: "Region")
+]=]
+
+--[=[
+	@prop instance RegionInstance
+	@within Region
+
+	A reference to the `regionInstance` argument pass when constructing
+]=]
+
+--[=[
+	@prop entered RBXScriptSignal
+	@within Region
+
+	Fired when an instance in the whitelist enters the Region.
+
+	```lua
+	local regionInstance = Instance.new("Part")
+	local region = Region.new(regionInstance)
+
+	region.entered:Connect(function(instance: Instance)
+		print(instance, "entered the region")
+	end)
+	```
+]=]
+
+--[=[
+	@prop left RBXScriptSignal
+	@within Region
+
+	Fired when an instance in the whitelist leaves the Region.
+
+	Usage:
+
+	```lua
+	local regionInstance = Instance.new("Part")
+	local region = Region.new(regionInstance)
+
+	region.left:Connect(function(instance: Instance)
+		print(instance, "left the region")
+	end)
+	```
+]=]
+
+--[=[
+	Constructs a new Region instance.
+
+	You can either pass in a Model or a BasePart which will represent the
+	Region's boundaries in the Workspace.
+
+	When using a Model, it must contain BaseParts as children.
+
+	A Region's BaseParts are known as "segments." Every Region must have at
+	least one segment, and when a segment is collided with by instances in the
+	whitelist certain events will be triggered.
+
+	```lua
+	local regionInstance = Instance.new("Part")
+	local region = Region.new(regionInstance)
+	```
+
+	@param regionInstance RegionInstance
+	@return Region
+]=]
 function Region.new(regionInstance: Model | BasePart)
 	local self = {}
 
@@ -25,6 +107,20 @@ function Region.new(regionInstance: Model | BasePart)
 	return setmetatable(self, Region)
 end
 
+--[=[
+	Static function for checking if the given argument is a Region instance or not.
+
+	```lua
+	local regionInstance = Instance.new("Part")
+	local region = Region.new(regionInstance)
+
+	print(Region.is(region)) -- true
+	print(Region.is("string") -- false
+	```
+
+	@param other any
+	@return boolean -- Returns `true` if `other` is a Region, `false` otherwise
+]=]
 function Region.is(other: any)
 	return tostring(other) == Region.ClassName
 end
@@ -33,12 +129,52 @@ function Region:__tostring()
 	return self.name
 end
 
+--[=[
+	Sets the instances that can collide with the Region and trigger events.
+
+	The whitelist must be defined or the Region will not respond to any instances.
+
+	:::tip
+	A common use case is to set the whitelist to all the Character models in the
+	Workspace. This allows you to setup a region system where your players can
+	enter and leave specific zones.
+	:::
+
+	```lua
+	local regionInstance = Instance.new("Part")
+	local region = Region.new(regionInstance)
+
+	region:setWhitelist({
+		Players.LocalPlayer.Character
+	})
+	```
+
+	@param whitelist { Instance }
+]=]
 function Region:setWhitelist(whitelist: { Instance }): nil
 	self._whitelist = whitelist
 
 	return nil
 end
 
+--[=[
+	Get all of the BaseParts that compose the Region's boundary.
+
+	:::info
+	If you passed in a BasePart when constructing, this will return an array
+	with that BasePart as the only element. If you passed a Model, this will
+	return an array with all BasePart descendants.
+	:::
+
+	```lua
+	local regionInstance = Instance.new("Part")
+	local region = Region.new(regionInstance)
+
+	print(region:getRegionSegments())
+	```
+
+	@return { BasePart } -- Returns all BaseParts that compose the Region
+]=]
 function Region:getRegionSegments(): { BasePart }
 	local segments: { BasePart } = {}
 
@@ -55,6 +191,32 @@ function Region:getRegionSegments(): { BasePart }
 	return segments
 end
 
+--[=[
+	Gets all whitelisted Instances that are within the Region.
+
+	:::tip
+	The below example uses a while loop to print out all whitelisted instances
+	within the Region for illustrative purposes. Usually you will want to
+	respond to the `enter` and `left` events.
+	:::
+
+	```lua
+	local regionInstance = Instance.new("Part")
+	local region = Region.new(regionInstance)
+
+	region:setWhitelist({
+		Players.LocalPlayer.Character
+	})
+
+	region:listen()
+
+	while task.wait(1) do
+		print(region:getInstancesInRegion())
+	end
+	```
+
+	@return { Instance } -- Array of whitelisted Instances that are within the Region
+]=]
 function Region:getInstancesInRegion(): { Instance }
 	local overlapParams = OverlapParams.new()
 	overlapParams.FilterType = Enum.RaycastFilterType.Whitelist
@@ -71,6 +233,30 @@ function Region:getInstancesInRegion(): { Instance }
 	return result
 end
 
+--[=[
+	Checks if the given Instance is within the Region.
+
+	This only applies to instances in the whitelist. If you call this function
+	on an instance that is not whitelisted, it will always return `false`.
+
+	```lua
+	local regionInstance = Instance.new("Part")
+	local region = Region.new(regionInstance)
+
+	region:setWhitelist({
+		workspace.Part
+	})
+
+	region:listen()
+
+	while task.wait(1) do
+		print(region:isInstanceInRegion(workspace.Part))
+	end
+	```
+
+	@param instance Instance
+	@return boolean -- Returns `true` if the Instance is within the Region, `false` otherwise
+]=]
 function Region:isInstanceInRegion(instance: Instance): boolean
 	for _, other in ipairs(self:getInstancesInRegion()) do
 		if instance == other or other:IsDescendantOf(instance) then
@@ -81,6 +267,24 @@ function Region:isInstanceInRegion(instance: Instance): boolean
 	return false
 end
 
+--[=[
+	Starts a Heartbeat connection to listen for instances in the whitelist
+	colliding with the Region.
+
+	This method must be called before instances in the whitelist will be
+	detected within the Region's boundaries.
+
+	```lua
+	local regionInstance = Instance.new("Part")
+	local region = Region.new(regionInstance)
+
+	region:setWhitelist({
+		Players.LocalPlayer.Character
+	})
+
+	region:listen()
+	```
+]=]
 function Region:listen()
 	self._heartbeat = RunService.Heartbeat:Connect(function()
 		for _, instance in ipairs(self._whitelist) do
@@ -99,6 +303,28 @@ function Region:listen()
 	end)
 end
 
+--[=[
+	Destroys the Region, cleaning up any connections and destroying Instances that the Region relied on.
+
+	Note that this _will_ destroy `regionInstance`.
+
+	```lua
+	local regionInstance = Instance.new("Part")
+	local region = Region.new(regionInstance)
+
+	region:setWhitelist({
+		workspace.Part
+	})
+
+	region:listen()
+
+	-- Later...
+
+	region:destroy()
+
+	print(regionInstance.Parent) -- nil
+	```
+]=]
 function Region:destroy()
 	self.instance:Destroy()
 	self._enteredBindable:Destroy()
