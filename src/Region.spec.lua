@@ -1,4 +1,3 @@
-local Mock = require(script.Parent.Parent.Dev.Mock)
 local Region = require(script.Parent.Region)
 
 local function createRegionModel(): Model & { Segment1: Part, Segment2: Part }
@@ -89,25 +88,46 @@ return function()
 	end)
 
 	describe("getInstancesInRegion", function()
-		it("should return an array of all whitelisted parts within the region", function()
-			local whitelist = {
-				Instance.new("Part"),
-			}
+		local whitelisted: Part
+		local regionInstance: Part
 
-			local mockWorldModel = Mock.MagicMock.new()
-			Mock.setReturnValue(mockWorldModel.GetPartsInPart, whitelist)
+		beforeEach(function()
+			whitelisted = Instance.new("Part")
+			whitelisted.Anchored = true
+			whitelisted.Parent = workspace
 
-			local regionInstance = createRegionModel()
-
-			local region = Region.new(regionInstance)
-			region:setWhitelist(whitelist)
-			region._worldModel = mockWorldModel
-
-			local instances = region:getInstancesInRegion()
-			expect(instances[1]).to.equal(whitelist[1])
+			regionInstance = Instance.new("Part")
+			regionInstance.Anchored = true
+			regionInstance.Parent = workspace
 		end)
 
-		it("should never find an instance in the whitelist if it is not in the region", function() end)
+		afterEach(function()
+			whitelisted:Destroy()
+			regionInstance:Destroy()
+		end)
+
+		it("should return an array of all whitelisted instances within the region", function()
+			local region = Region.new(regionInstance)
+
+			region:setWhitelist({
+				whitelisted,
+			})
+
+			local instances = region:getInstancesInRegion()
+
+			expect(#instances).to.equal(1)
+			expect(instances[1]).to.equal(whitelisted)
+		end)
+
+		it("should never find an instance in the region if it is not whitelisted", function()
+			local region = Region.new(regionInstance)
+
+			region:setWhitelist({})
+
+			local instances = region:getInstancesInRegion()
+
+			expect(#instances).to.equal(0)
+		end)
 	end)
 
 	describe("isInstanceInRegion", function()
