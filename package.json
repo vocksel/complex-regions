@@ -1,0 +1,10 @@
+{
+  "name": "complex-regions",
+  "scripts": {
+    "start": "moonwave dev",
+    "deploy": "moonwave build --publish"
+  },
+  "devDependencies": {
+    "moonwave": "^0.2.16"
+  }
+}

@@ -1,0 +1,5 @@
+[home]
+enabled = true
+
+[docusaurus]
+tagline = "Define regions in an experience out of BaseParts of any shape or size."
