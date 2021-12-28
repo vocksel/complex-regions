@@ -33,7 +33,7 @@ Add the following to your `wally.toml` and run `wally install` to download the p
 
 ```toml
 [dependencies]
-Geo = "vocksel/complex-regions@1.0.1
+ComplexRegions = "vocksel/complex-regions@1.0.1
 ```
 
 Make sure the resulting `Packages` folder is synced into your experience using a tool like [Rojo](https://github.com/rojo-rbx/rojo/).
@@ -44,7 +44,7 @@ Make sure the resulting `Packages` folder is synced into your experience using a
 * Drag and drop the file into Roblox Studio to add it to your experience.
 ## Documentation
 
-You can find the Hue documentation [here](https://vocksel.github.io/complex-regions).
+You can find the documentation [here](https://vocksel.github.io/complex-regions).
 
 ## Contributing
 
