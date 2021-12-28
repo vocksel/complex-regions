@@ -6,6 +6,8 @@ sidebar_position: 2
 
 A region can be a singular `BasePart` instance, or a `Model` containing several `BasePart`s that make up the region. The latter is where this package shines.
 
+![Example of regions composed of multiple parts](/example.png)
+
 To create a region add a new `Model` into the Workspace, rename it to Region, and add some Parts inside of it. Make sure to set `CanCollide = false` for each Part so that other instances can enter the region.
 
 Next, create a new LocalScript in StarterPlayerScripts with the following contents:

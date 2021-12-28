@@ -1,7 +1,5 @@
 --[=[
 	@class ComplexRegions
-
-	![](/example.png)
 ]=]
 
 --[=[
