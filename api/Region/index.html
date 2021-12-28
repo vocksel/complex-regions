@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="generator" content="Docusaurus v2.0.0-beta.9">
+<title data-react-helmet="true">Region | complex-regions</title><meta data-react-helmet="true" property="og:title" content="Region | complex-regions"><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" property="og:url" content="https://vocksel.github.io/complex-regions/api/Region"><meta data-react-helmet="true" name="docusaurus_locale" content="en"><meta data-react-helmet="true" name="docusaurus_tag" content="default"><link data-react-helmet="true" rel="canonical" href="https://vocksel.github.io/complex-regions/api/Region"><link data-react-helmet="true" rel="alternate" href="https://vocksel.github.io/complex-regions/api/Region" hreflang="en"><link data-react-helmet="true" rel="alternate" href="https://vocksel.github.io/complex-regions/api/Region" hreflang="x-default"><link rel="stylesheet" href="/complex-regions/assets/css/styles.302001c7.css">
+<link rel="preload" href="/complex-regions/assets/js/runtime~main.512aac8a.js" as="script">
+<link rel="preload" href="/complex-regions/assets/js/main.d19ab619.js" as="script">
+</head>
+<body>
+<script>!function(){function e(e){document.documentElement.setAttribute("data-theme",e)}var t=function(){var e=null;try{e=localStorage.getItem("theme")}catch(e){}return e}();null!==t?e(t):window.matchMedia("(prefers-color-scheme: dark)").matches?e("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,e("light"))}()</script><div id="__docusaurus">
+<div><a href="#" class="skipToContent_1oUP">Skip to main content</a></div><nav class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Navigation bar toggle" class="navbar__toggle clean-btn" type="button" tabindex="0"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/complex-regions/"><b class="navbar__title">complex-regions</b></a><a class="navbar__item navbar__link" href="/complex-regions/docs/intro">Docs</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/complex-regions/api/">API</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/vocksel/complex-regions" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link"><span>GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_3J9K"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></span></a><div class="toggle_71bT toggle_3Zt9 toggleDisabled_3cF-"><div class="toggleTrack_32Fl" role="button" tabindex="-1"><div class="toggleTrackCheck_3lV7"><span class="toggleIcon_O4iE">🌜</span></div><div class="toggleTrackX_S2yS"><span class="toggleIcon_O4iE">🌞</span></div><div class="toggleTrackThumb_xI_Z"></div></div><input type="checkbox" class="toggleScreenReader_28Tw" aria-label="Switch between dark and light mode"></div><div class="navbar__search"><span aria-label="expand searchbar" role="button" class="search-icon" tabindex="0"></span><input type="search" id="search_input_react" placeholder="Press S to Search..." aria-label="Search" class="navbar__search-input search-bar"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div class="main-wrapper docPageContainer_2Kz0"><div class="docPage_1bdk"><div class="docSidebarContainer_1ykS"><div class="sidebar_15mo"><nav class="menu thin-scrollbar menu_Bmed"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/complex-regions/api/ComplexRegions">​Complex​Regions</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/complex-regions/api/Region">​Region</a></li></ul></nav><button type="button" title="Collapse sidebar" aria-label="Collapse sidebar" class="button button--secondary button--outline collapseSidebarButton_1CGd"><svg width="20" height="20" aria-hidden="true" class="collapseSidebarButtonIcon_3E-R"><g fill="#7a7a7a"><path d="M9.992 10.023c0 .2-.062.399-.172.547l-4.996 7.492a.982.982 0 01-.828.454H1c-.55 0-1-.453-1-1 0-.2.059-.403.168-.551l4.629-6.942L.168 3.078A.939.939 0 010 2.528c0-.548.45-.997 1-.997h2.996c.352 0 .649.18.828.45L9.82 9.472c.11.148.172.347.172.55zm0 0"></path><path d="M19.98 10.023c0 .2-.058.399-.168.547l-4.996 7.492a.987.987 0 01-.828.454h-3c-.547 0-.996-.453-.996-1 0-.2.059-.403.168-.551l4.625-6.942-4.625-6.945a.939.939 0 01-.168-.55 1 1 0 01.996-.997h3c.348 0 .649.18.828.45l4.996 7.492c.11.148.168.347.168.55zm0 0"></path></g></svg></button></div></div><main class="docMainContainer_28N5"><div class="container padding-vert--lg"><div class="row"><div class="col docItemCol_3WPG"><div class="docItemContainer_3XDu"><article><div class="member_qHIL markdown"><div class="tocCollapsible_1PrD theme-doc-toc-mobile tocMobile_3ryM"><button type="button" class="clean-btn tocCollapsibleButton_2O1e">On this page</button></div><header><h1 class="docTitle_1ddc" style="text-decoration:none"><span style="display:inline-block">Region</span></h1><div class="luaClassTags_2Zrs"></div><div></div></header><h2 class="anchor anchorWithStickyNavbar_31ik" id="types">Types<a aria-hidden="true" class="hash-link" href="#types" title="Direct link to heading">​</a></h2><div class="divider_3z1R"></div><h3 class="anchor anchorWithStickyNavbar_31ik" id="RegionInstance"><code style="text-decoration:none">RegionInstance</code><a aria-hidden="true" class="hash-link" href="#RegionInstance" title="Direct link to heading">​</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/vocksel/complex-regions/blob/master/src/Region.lua#L18"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code class="purple__nFc">type</code> <code>RegionInstance<!-- --> = </code> <code class="blue_2Afy"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/class/BasePart" target="_blank" rel="noopener noreferrer">BasePart<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code><code class="op_1JtD"> | </code><code class="blue_2Afy"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/class/Model" target="_blank" rel="noopener noreferrer">Model<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code></div><div>
+<p>
+  The 3D representation of the Region's boundaries. It can either be a single
+  BasePart or a Model composed of several BaseParts that all represent one
+  Region.
+</p>
+</div><h2 class="anchor anchorWithStickyNavbar_31ik" id="properties">Properties<a aria-hidden="true" class="hash-link" href="#properties" title="Direct link to heading">​</a></h2><div class="divider_3z1R"></div><h3 class="anchor anchorWithStickyNavbar_31ik" id="name"><code style="text-decoration:none">name</code><a aria-hidden="true" class="hash-link" href="#name" title="Direct link to heading">​</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/vocksel/complex-regions/blob/master/src/Region.lua#L27"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Region<!-- -->.<!-- -->name<!-- -->:<!-- --> </code> <code class="blue_2Afy">string</code></div><div>
+<p>The name of the Region. This is used when calling <code>tostring()</code> on the Region instance.</p>
+<p>(Default: "Region")</p>
+</div><div class="divider_3z1R"></div><h3 class="anchor anchorWithStickyNavbar_31ik" id="instance"><code style="text-decoration:none">instance</code><a aria-hidden="true" class="hash-link" href="#instance" title="Direct link to heading">​</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/vocksel/complex-regions/blob/master/src/Region.lua#L34"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Region<!-- -->.<!-- -->instance<!-- -->:<!-- --> </code> <code class="blue_2Afy"><a style="text-decoration:underline;color:inherit" href="/complex-regions/api/Region#RegionInstance">RegionInstance</a></code></div><div>
+<p>A reference to the <code>regionInstance</code> argument pass when constructing</p>
+</div><div class="divider_3z1R"></div><h3 class="anchor anchorWithStickyNavbar_31ik" id="entered"><code style="text-decoration:none">entered</code><a aria-hidden="true" class="hash-link" href="#entered" title="Direct link to heading">​</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/vocksel/complex-regions/blob/master/src/Region.lua#L50"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Region<!-- -->.<!-- -->entered<!-- -->:<!-- --> </code> <code class="blue_2Afy"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/RBXScriptSignal" target="_blank" rel="noopener noreferrer">RBXScriptSignal<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code></div><div>
+<p>Fired when an instance in the whitelist enters the Region.</p>
+<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> regionInstance <span class="token operator">=</span> Instance<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token string">"Part"</span><span class="token punctuation">)</span>
+<span class="token keyword">local</span> region <span class="token operator">=</span> Region<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span>regionInstance<span class="token punctuation">)</span>
+
+region<span class="token punctuation">.</span>entered<span class="token punctuation">:</span><span class="token function">Connect</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>instance<span class="token punctuation">:</span> Instance<span class="token punctuation">)</span>
+	<span class="token function">print</span><span class="token punctuation">(</span>instance<span class="token punctuation">,</span> <span class="token string">"entered the region"</span><span class="token punctuation">)</span>
+<span class="token keyword">end</span><span class="token punctuation">)</span>
+</code></pre>
+</div><div class="divider_3z1R"></div><h3 class="anchor anchorWithStickyNavbar_31ik" id="left"><code style="text-decoration:none">left</code><a aria-hidden="true" class="hash-link" href="#left" title="Direct link to heading">​</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/vocksel/complex-regions/blob/master/src/Region.lua#L68"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Region<!-- -->.<!-- -->left<!-- -->:<!-- --> </code> <code class="blue_2Afy"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/RBXScriptSignal" target="_blank" rel="noopener noreferrer">RBXScriptSignal<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code></div><div>
+<p>Fired when an instance in the whitelist leaves the Region.</p>
+<p>Usage:</p>
+<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> regionInstance <span class="token operator">=</span> Instance<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token string">"Part"</span><span class="token punctuation">)</span>
+<span class="token keyword">local</span> region <span class="token operator">=</span> Region<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span>regionInstance<span class="token punctuation">)</span>
+
+region<span class="token punctuation">.</span>left<span class="token punctuation">:</span><span class="token function">Connect</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>instance<span class="token punctuation">:</span> Instance<span class="token punctuation">)</span>
+	<span class="token function">print</span><span class="token punctuation">(</span>instance<span class="token punctuation">,</span> <span class="token string">"left the region"</span><span class="token punctuation">)</span>
+<span class="token keyword">end</span><span class="token punctuation">)</span>
+</code></pre>
+</div><h2 class="anchor anchorWithStickyNavbar_31ik" id="functions">Functions<a aria-hidden="true" class="hash-link" href="#functions" title="Direct link to heading">​</a></h2><div class="divider_3z1R"></div><h3 class="anchor anchorWithStickyNavbar_31ik" id="new"><code style="text-decoration:none">new</code><a aria-hidden="true" class="hash-link" href="#new" title="Direct link to heading">​</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/vocksel/complex-regions/blob/master/src/Region.lua#L89"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Region<!-- -->.</code><code class="green_3LnD">new</code><code>(</code><code>regionInstance<!-- -->: </code><code class="blue_2Afy"><a style="text-decoration:underline;color:inherit" href="/complex-regions/api/Region#RegionInstance">RegionInstance</a></code><code>) → </code><code class="blue_2Afy"><a style="text-decoration:underline;color:inherit" href="/complex-regions/api/Region">Region</a></code></div><div>
+<p>Constructs a new Region instance.</p>
+<p>
+  You can either pass in a Model or a BasePart which will represent the
+  Region's boundaries in the Workspace.
+</p>
+<p>When using a Model, it must contain BaseParts as children.</p>
+<p>
+  A Region's BaseParts are known as "segments." Every Region must have at
+  least one segment, and when a segment is collided with by instances in the
+  whitelist certain events will be triggered.
+</p>
+<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> regionInstance <span class="token operator">=</span> Instance<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token string">"Part"</span><span class="token punctuation">)</span>
+<span class="token keyword">local</span> region <span class="token operator">=</span> Region<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span>regionInstance<span class="token punctuation">)</span>
+</code></pre>
+</div><div class="divider_3z1R"></div><h3 class="anchor anchorWithStickyNavbar_31ik" id="is"><code style="text-decoration:none">is</code><a aria-hidden="true" class="hash-link" href="#is" title="Direct link to heading">​</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/vocksel/complex-regions/blob/master/src/Region.lua#L124"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Region<!-- -->.</code><code class="green_3LnD">is</code><code>(</code><code>other<!-- -->: </code><code class="blue_2Afy">any</code><code>) → </code><code class="blue_2Afy">boolean</code><span class="inlineDescription_17uy">-- <span>
+<p>Returns <code>true</code> if <code>other</code> is a Region, <code>false</code> otherwise</p>
+</span></span></div><div>
+<p>Static function for checking if the given argument is a Region instance or not.</p>
+<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> regionInstance <span class="token operator">=</span> Instance<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token string">"Part"</span><span class="token punctuation">)</span>
+<span class="token keyword">local</span> region <span class="token operator">=</span> Region<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span>regionInstance<span class="token punctuation">)</span>
+
+<span class="token function">print</span><span class="token punctuation">(</span>Region<span class="token punctuation">.</span><span class="token function">is</span><span class="token punctuation">(</span>region<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment">-- true</span>
+<span class="token function">print</span><span class="token punctuation">(</span>Region<span class="token punctuation">.</span><span class="token function">is</span><span class="token punctuation">(</span><span class="token string">"string"</span><span class="token punctuation">)</span> <span class="token comment">-- false</span>
+</code></pre>
+</div><div class="divider_3z1R"></div><h3 class="anchor anchorWithStickyNavbar_31ik" id="setWhitelist"><code style="text-decoration:none">setWhitelist</code><a aria-hidden="true" class="hash-link" href="#setWhitelist" title="Direct link to heading">​</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/vocksel/complex-regions/blob/master/src/Region.lua#L154"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Region<!-- -->:</code><code class="green_3LnD">setWhitelist</code><code>(</code><code>whitelist<!-- -->: </code><code class="purple__nFc">{</code><code class="blue_2Afy"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/Instance" target="_blank" rel="noopener noreferrer">Instance<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code><code class="purple__nFc">}</code><code>) → </code><code>(</code><code>)</code></div><div>
+<p>Sets the instances that can collide with the Region and trigger events.</p>
+<p>The whitelist must be defined or the Region will not respond to any instances.</p>
+<div class="admonition admonition-tip alert alert--success">
+  <div class="admonition-heading">
+    <h5><span class="admonition-icon"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
+          <path d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path>
+        </svg></span>tip</h5>
+  </div>
+  <div class="admonition-content">
+    <p>
+      A common use case is to set the whitelist to all the Character models in the
+      Workspace. This allows you to setup a region system where your players can
+      enter and leave specific zones.
+    </p>
+  </div>
+</div>
+<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> regionInstance <span class="token operator">=</span> Instance<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token string">"Part"</span><span class="token punctuation">)</span>
+<span class="token keyword">local</span> region <span class="token operator">=</span> Region<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span>regionInstance<span class="token punctuation">)</span>
+
+region<span class="token punctuation">:</span><span class="token function">setWhitelist</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+	Players<span class="token punctuation">.</span>LocalPlayer<span class="token punctuation">.</span>Character
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+</div><div class="divider_3z1R"></div><h3 class="anchor anchorWithStickyNavbar_31ik" id="getRegionSegments"><code style="text-decoration:none">getRegionSegments</code><a aria-hidden="true" class="hash-link" href="#getRegionSegments" title="Direct link to heading">​</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/vocksel/complex-regions/blob/master/src/Region.lua#L178"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Region<!-- -->:</code><code class="green_3LnD">getRegionSegments</code><code>(</code><code>) → </code><code class="purple__nFc">{</code><code class="blue_2Afy"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/class/BasePart" target="_blank" rel="noopener noreferrer">BasePart<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code><code class="purple__nFc">}</code><span class="inlineDescription_17uy">-- <span>
+<p>Returns all BaseParts that compose the Region</p>
+</span></span></div><div>
+<p>Get all of the BaseParts that compose the Region's boundary.</p>
+<div class="admonition admonition-info alert alert--info">
+  <div class="admonition-heading">
+    <h5><span class="admonition-icon"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
+          <path d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path>
+        </svg></span>info</h5>
+  </div>
+  <div class="admonition-content">
+    <p>
+      If you passed in a BasePart when constructing, this will return an array
+      with that BasePart as the only element. If you passed a Model, this will
+      return an array with all BasePart descendants.
+    </p>
+  </div>
+</div>
+<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> regionInstance <span class="token operator">=</span> Instance<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token string">"Part"</span><span class="token punctuation">)</span>
+<span class="token keyword">local</span> region <span class="token operator">=</span> Region<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span>regionInstance<span class="token punctuation">)</span>
+
+<span class="token function">print</span><span class="token punctuation">(</span>region<span class="token punctuation">:</span><span class="token function">getRegionSegments</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre>
+</div><div class="divider_3z1R"></div><h3 class="anchor anchorWithStickyNavbar_31ik" id="getInstancesInRegion"><code style="text-decoration:none">getInstancesInRegion</code><a aria-hidden="true" class="hash-link" href="#getInstancesInRegion" title="Direct link to heading">​</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/vocksel/complex-regions/blob/master/src/Region.lua#L220"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Region<!-- -->:</code><code class="green_3LnD">getInstancesInRegion</code><code>(</code><code>) → </code><code class="purple__nFc">{</code><code class="blue_2Afy"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/Instance" target="_blank" rel="noopener noreferrer">Instance<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code><code class="purple__nFc">}</code><span class="inlineDescription_17uy">-- <span>
+<p>Array of whitelisted Instances that are within the Region</p>
+</span></span></div><div>
+<p>Gets all whitelisted Instances that are within the Region.</p>
+<div class="admonition admonition-tip alert alert--success">
+  <div class="admonition-heading">
+    <h5><span class="admonition-icon"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="16" viewBox="0 0 12 16">
+          <path d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path>
+        </svg></span>tip</h5>
+  </div>
+  <div class="admonition-content">
+    <p>
+      The below example uses a while loop to print out all whitelisted instances
+      within the Region for illustrative purposes. Usually you will want to
+      respond to the <code>enter</code> and <code>left</code> events.
+    </p>
+  </div>
+</div>
+<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> regionInstance <span class="token operator">=</span> Instance<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token string">"Part"</span><span class="token punctuation">)</span>
+<span class="token keyword">local</span> region <span class="token operator">=</span> Region<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span>regionInstance<span class="token punctuation">)</span>
+
+region<span class="token punctuation">:</span><span class="token function">setWhitelist</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+	Players<span class="token punctuation">.</span>LocalPlayer<span class="token punctuation">.</span>Character
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+region<span class="token punctuation">:</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">while</span> task<span class="token punctuation">.</span><span class="token function">wait</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token keyword">do</span>
+	<span class="token function">print</span><span class="token punctuation">(</span>region<span class="token punctuation">:</span><span class="token function">getInstancesInRegion</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+</code></pre>
+</div><div class="divider_3z1R"></div><h3 class="anchor anchorWithStickyNavbar_31ik" id="isInstanceInRegion"><code style="text-decoration:none">isInstanceInRegion</code><a aria-hidden="true" class="hash-link" href="#isInstanceInRegion" title="Direct link to heading">​</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/vocksel/complex-regions/blob/master/src/Region.lua#L260"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Region<!-- -->:</code><code class="green_3LnD">isInstanceInRegion</code><code>(</code><code>instance<!-- -->: </code><code class="blue_2Afy"><a style="text-decoration:underline;color:inherit" href="https://developer.roblox.com/en-us/api-reference/datatype/Instance" target="_blank" rel="noopener noreferrer">Instance<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" style="color:gray;vertical-align:middle;margin-left:2px"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></code><code>) → </code><code class="blue_2Afy">boolean</code><span class="inlineDescription_17uy">-- <span>
+<p>Returns <code>true</code> if the Instance is within the Region, <code>false</code> otherwise</p>
+</span></span></div><div>
+<p>Checks if the given Instance is within the Region.</p>
+<p>
+  This only applies to instances in the whitelist. If you call this function
+  on an instance that is not whitelisted, it will always return <code>false</code>.
+</p>
+<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> regionInstance <span class="token operator">=</span> Instance<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token string">"Part"</span><span class="token punctuation">)</span>
+<span class="token keyword">local</span> region <span class="token operator">=</span> Region<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span>regionInstance<span class="token punctuation">)</span>
+
+region<span class="token punctuation">:</span><span class="token function">setWhitelist</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+	workspace<span class="token punctuation">.</span>Part
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+region<span class="token punctuation">:</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token keyword">while</span> task<span class="token punctuation">.</span><span class="token function">wait</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token keyword">do</span>
+	<span class="token function">print</span><span class="token punctuation">(</span>region<span class="token punctuation">:</span><span class="token function">isInstanceInRegion</span><span class="token punctuation">(</span>workspace<span class="token punctuation">.</span>Part<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token keyword">end</span>
+</code></pre>
+</div><div class="divider_3z1R"></div><h3 class="anchor anchorWithStickyNavbar_31ik" id="listen"><code style="text-decoration:none">listen</code><a aria-hidden="true" class="hash-link" href="#listen" title="Direct link to heading">​</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/vocksel/complex-regions/blob/master/src/Region.lua#L288"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Region<!-- -->:</code><code class="green_3LnD">listen</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
+<p>
+  Starts a Heartbeat connection to listen for instances in the whitelist
+  colliding with the Region.
+</p>
+<p>
+  This method must be called before instances in the whitelist will be
+  detected within the Region's boundaries.
+</p>
+<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> regionInstance <span class="token operator">=</span> Instance<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token string">"Part"</span><span class="token punctuation">)</span>
+<span class="token keyword">local</span> region <span class="token operator">=</span> Region<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span>regionInstance<span class="token punctuation">)</span>
+
+region<span class="token punctuation">:</span><span class="token function">setWhitelist</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+	Players<span class="token punctuation">.</span>LocalPlayer<span class="token punctuation">.</span>Character
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+region<span class="token punctuation">:</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre>
+</div><div class="divider_3z1R"></div><h3 class="anchor anchorWithStickyNavbar_31ik" id="destroy"><code style="text-decoration:none">destroy</code><a aria-hidden="true" class="hash-link" href="#destroy" title="Direct link to heading">​</a></h3><div class="repositoryDetailsContainer_1UH0"><a class="sourceButton_2aE5" href="https://github.com/vocksel/complex-regions/blob/master/src/Region.lua#L328"><div class="sourceButtonText_monK">&lt;/&gt;</div></a></div><div class="memberString_P8-X"><code>Region<!-- -->:</code><code class="green_3LnD">destroy</code><code>(</code><code>) → </code><code>(</code><code>)</code></div><div>
+<p>Destroys the Region, cleaning up any connections and destroying Instances that the Region relied on.</p>
+<p>Note that this <em>will</em> destroy <code>regionInstance</code>.</p>
+<pre class="language-lua"><code class="language-lua"><span class="token keyword">local</span> regionInstance <span class="token operator">=</span> Instance<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span><span class="token string">"Part"</span><span class="token punctuation">)</span>
+<span class="token keyword">local</span> region <span class="token operator">=</span> Region<span class="token punctuation">.</span><span class="token function">new</span><span class="token punctuation">(</span>regionInstance<span class="token punctuation">)</span>
+
+region<span class="token punctuation">:</span><span class="token function">setWhitelist</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+	workspace<span class="token punctuation">.</span>Part
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+region<span class="token punctuation">:</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token comment">-- Later...</span>
+
+region<span class="token punctuation">:</span><span class="token function">destroy</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+<span class="token function">print</span><span class="token punctuation">(</span>regionInstance<span class="token punctuation">.</span>Parent<span class="token punctuation">)</span> <span class="token comment">-- nil</span>
+</code></pre>
+</div></div></article></div><details><summary>Show raw api</summary><pre style="max-width:100%;white-space:pre-wrap">{
+    &quot;functions&quot;: [
+        {
+            &quot;name&quot;: &quot;new&quot;,
+            &quot;desc&quot;: &quot;Constructs a new Region instance.\n\nYou can either pass in a Model or a BasePart which will represent the\nRegion&#x27;s boundaries in the Workspace.\n\nWhen using a Model, it must contain BaseParts as children.\n\nA Region&#x27;s BaseParts are known as \&quot;segments.\&quot; Every Region must have at\nleast one segment, and when a segment is collided with by instances in the\nwhitelist certain events will be triggered.\n\n```lua\nlocal regionInstance = Instance.new(\&quot;Part\&quot;)\nlocal region = Region.new(regionInstance)\n```&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;regionInstance&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;RegionInstance&quot;
+                }
+            ],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;Region&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;static&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 89,
+                &quot;path&quot;: &quot;src/Region.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;is&quot;,
+            &quot;desc&quot;: &quot;Static function for checking if the given argument is a Region instance or not.\n\n```lua\nlocal regionInstance = Instance.new(\&quot;Part\&quot;)\nlocal region = Region.new(regionInstance)\n\nprint(Region.is(region)) -- true\nprint(Region.is(\&quot;string\&quot;) -- false\n```&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;other&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;any&quot;
+                }
+            ],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;Returns `true` if `other` is a Region, `false` otherwise&quot;,
+                    &quot;lua_type&quot;: &quot;boolean&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;static&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 124,
+                &quot;path&quot;: &quot;src/Region.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;setWhitelist&quot;,
+            &quot;desc&quot;: &quot;Sets the instances that can collide with the Region and trigger events.\n\nThe whitelist must be defined or the Region will not respond to any instances.\n\n:::tip\nA common use case is to set the whitelist to all the Character models in the\nWorkspace. This allows you to setup a region system where your players can\nenter and leave specific zones.\n:::\n\n```lua\nlocal regionInstance = Instance.new(\&quot;Part\&quot;)\nlocal region = Region.new(regionInstance)\n\nregion:setWhitelist({\n\tPlayers.LocalPlayer.Character\n})\n```&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;whitelist&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;{ Instance }&quot;
+                }
+            ],
+            &quot;returns&quot;: [],
+            &quot;function_type&quot;: &quot;method&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 154,
+                &quot;path&quot;: &quot;src/Region.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;getRegionSegments&quot;,
+            &quot;desc&quot;: &quot;Get all of the BaseParts that compose the Region&#x27;s boundary.\n\n:::info\nIf you passed in a BasePart when constructing, this will return an array\nwith that BasePart as the only element. If you passed a Model, this will\nreturn an array with all BasePart descendants.\n:::\n\n```lua\nlocal regionInstance = Instance.new(\&quot;Part\&quot;)\nlocal region = Region.new(regionInstance)\n\nprint(region:getRegionSegments())\n```&quot;,
+            &quot;params&quot;: [],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;Returns all BaseParts that compose the Region&quot;,
+                    &quot;lua_type&quot;: &quot;{ BasePart }&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;method&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 178,
+                &quot;path&quot;: &quot;src/Region.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;getInstancesInRegion&quot;,
+            &quot;desc&quot;: &quot;Gets all whitelisted Instances that are within the Region.\n\n:::tip\nThe below example uses a while loop to print out all whitelisted instances\nwithin the Region for illustrative purposes. Usually you will want to\nrespond to the `enter` and `left` events.\n:::\n\n```lua\nlocal regionInstance = Instance.new(\&quot;Part\&quot;)\nlocal region = Region.new(regionInstance)\n\nregion:setWhitelist({\n\tPlayers.LocalPlayer.Character\n})\n\nregion:listen()\n\nwhile task.wait(1) do\n\tprint(region:getInstancesInRegion())\nend\n```&quot;,
+            &quot;params&quot;: [],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;Array of whitelisted Instances that are within the Region&quot;,
+                    &quot;lua_type&quot;: &quot;{ Instance }&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;method&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 220,
+                &quot;path&quot;: &quot;src/Region.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;isInstanceInRegion&quot;,
+            &quot;desc&quot;: &quot;Checks if the given Instance is within the Region.\n\nThis only applies to instances in the whitelist. If you call this function\non an instance that is not whitelisted, it will always return `false`.\n\n```lua\nlocal regionInstance = Instance.new(\&quot;Part\&quot;)\nlocal region = Region.new(regionInstance)\n\nregion:setWhitelist({\n\tworkspace.Part\n})\n\nregion:listen()\n\nwhile task.wait(1) do\n\tprint(region:isInstanceInRegion(workspace.Part))\nend\n```&quot;,
+            &quot;params&quot;: [
+                {
+                    &quot;name&quot;: &quot;instance&quot;,
+                    &quot;desc&quot;: &quot;&quot;,
+                    &quot;lua_type&quot;: &quot;Instance&quot;
+                }
+            ],
+            &quot;returns&quot;: [
+                {
+                    &quot;desc&quot;: &quot;Returns `true` if the Instance is within the Region, `false` otherwise&quot;,
+                    &quot;lua_type&quot;: &quot;boolean&quot;
+                }
+            ],
+            &quot;function_type&quot;: &quot;method&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 260,
+                &quot;path&quot;: &quot;src/Region.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;listen&quot;,
+            &quot;desc&quot;: &quot;Starts a Heartbeat connection to listen for instances in the whitelist\ncolliding with the Region.\n\nThis method must be called before instances in the whitelist will be\ndetected within the Region&#x27;s boundaries.\n\n```lua\nlocal regionInstance = Instance.new(\&quot;Part\&quot;)\nlocal region = Region.new(regionInstance)\n\nregion:setWhitelist({\n\tPlayers.LocalPlayer.Character\n})\n\nregion:listen()\n```&quot;,
+            &quot;params&quot;: [],
+            &quot;returns&quot;: [],
+            &quot;function_type&quot;: &quot;method&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 288,
+                &quot;path&quot;: &quot;src/Region.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;destroy&quot;,
+            &quot;desc&quot;: &quot;Destroys the Region, cleaning up any connections and destroying Instances that the Region relied on.\n\nNote that this _will_ destroy `regionInstance`.\n\n```lua\nlocal regionInstance = Instance.new(\&quot;Part\&quot;)\nlocal region = Region.new(regionInstance)\n\nregion:setWhitelist({\n\tworkspace.Part\n})\n\nregion:listen()\n\n-- Later...\n\nregion:destroy()\n\nprint(regionInstance.Parent) -- nil\n```&quot;,
+            &quot;params&quot;: [],
+            &quot;returns&quot;: [],
+            &quot;function_type&quot;: &quot;method&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 328,
+                &quot;path&quot;: &quot;src/Region.lua&quot;
+            }
+        }
+    ],
+    &quot;properties&quot;: [
+        {
+            &quot;name&quot;: &quot;name&quot;,
+            &quot;desc&quot;: &quot;The name of the Region. This is used when calling `tostring()` on the Region instance.\n\n(Default: \&quot;Region\&quot;)&quot;,
+            &quot;lua_type&quot;: &quot;string&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 27,
+                &quot;path&quot;: &quot;src/Region.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;instance&quot;,
+            &quot;desc&quot;: &quot;A reference to the `regionInstance` argument pass when constructing&quot;,
+            &quot;lua_type&quot;: &quot;RegionInstance&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 34,
+                &quot;path&quot;: &quot;src/Region.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;entered&quot;,
+            &quot;desc&quot;: &quot;Fired when an instance in the whitelist enters the Region.\n\n```lua\nlocal regionInstance = Instance.new(\&quot;Part\&quot;)\nlocal region = Region.new(regionInstance)\n\nregion.entered:Connect(function(instance: Instance)\n\tprint(instance, \&quot;entered the region\&quot;)\nend)\n```&quot;,
+            &quot;lua_type&quot;: &quot;RBXScriptSignal&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 50,
+                &quot;path&quot;: &quot;src/Region.lua&quot;
+            }
+        },
+        {
+            &quot;name&quot;: &quot;left&quot;,
+            &quot;desc&quot;: &quot;Fired when an instance in the whitelist leaves the Region.\n\nUsage:\n\n```lua\nlocal regionInstance = Instance.new(\&quot;Part\&quot;)\nlocal region = Region.new(regionInstance)\n\nregion.left:Connect(function(instance: Instance)\n\tprint(instance, \&quot;left the region\&quot;)\nend)\n```&quot;,
+            &quot;lua_type&quot;: &quot;RBXScriptSignal&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 68,
+                &quot;path&quot;: &quot;src/Region.lua&quot;
+            }
+        }
+    ],
+    &quot;types&quot;: [
+        {
+            &quot;name&quot;: &quot;RegionInstance&quot;,
+            &quot;desc&quot;: &quot;The 3D representation of the Region&#x27;s boundaries. It can either be a single\nBasePart or a Model composed of several BaseParts that all represent one\nRegion.&quot;,
+            &quot;lua_type&quot;: &quot;BasePart | Model&quot;,
+            &quot;source&quot;: {
+                &quot;line&quot;: 18,
+                &quot;path&quot;: &quot;src/Region.lua&quot;
+            }
+        }
+    ],
+    &quot;name&quot;: &quot;Region&quot;,
+    &quot;desc&quot;: &quot;&quot;,
+    &quot;source&quot;: {
+        &quot;line&quot;: 6,
+        &quot;path&quot;: &quot;src/Region.lua&quot;
+    }
+}</pre></details></div><div class="col col--3"><div class="tableOfContents_35-E thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#types" class="table-of-contents__link toc-highlight">Types</a><ul><li><a href="#RegionInstance" class="table-of-contents__link toc-highlight">RegionInstance</a></li></ul></li><li><a href="#properties" class="table-of-contents__link toc-highlight">Properties</a><ul><li><a href="#entered" class="table-of-contents__link toc-highlight">entered</a></li><li><a href="#instance" class="table-of-contents__link toc-highlight">instance</a></li><li><a href="#left" class="table-of-contents__link toc-highlight">left</a></li><li><a href="#name" class="table-of-contents__link toc-highlight">name</a></li></ul></li><li><a href="#functions" class="table-of-contents__link toc-highlight">Functions</a><ul><li><a href="#destroy" class="table-of-contents__link toc-highlight">:destroy</a></li><li><a href="#getInstancesInRegion" class="table-of-contents__link toc-highlight">:getInstancesInRegion</a></li><li><a href="#getRegionSegments" class="table-of-contents__link toc-highlight">:getRegionSegments</a></li><li><a href="#isInstanceInRegion" class="table-of-contents__link toc-highlight">:isInstanceInRegion</a></li><li><a href="#listen" class="table-of-contents__link toc-highlight">:listen</a></li><li><a href="#setWhitelist" class="table-of-contents__link toc-highlight">:setWhitelist</a></li><li><a href="#is" class="table-of-contents__link toc-highlight">.is</a></li><li><a href="#new" class="table-of-contents__link toc-highlight">.new</a></li></ul></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2021 vocksel. Built with Moonwave and Docusaurus.</div></div></div></footer></div>
+<script src="/complex-regions/assets/js/runtime~main.512aac8a.js"></script>
+<script src="/complex-regions/assets/js/main.d19ab619.js"></script>
+</body>
+</html>

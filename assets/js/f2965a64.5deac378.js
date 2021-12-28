@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[179],{97868:function(e){e.exports=JSON.parse('{"sourceUrl":"https://github.com/vocksel/complex-regions/blob/master","baseUrl":"/complex-regions/","classOrder":["ComplexRegions","Region"],"apiCategories":[]}')}}]);
