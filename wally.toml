@@ -1,6 +1,7 @@
 [package]
 name = "vocksel/complex-regions"
-version = "0.1.1"
+description = "Define regions in an experience out of BaseParts of any shape or size"
+version = "0.1.2"
 authors = [ "David Minnerly <me@vocksel.com>" ]
 license = "MIT"
 registry = "https://github.com/UpliftGames/wally-index"
