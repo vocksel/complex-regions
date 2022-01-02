@@ -16,7 +16,7 @@ Add the following to your `wally.toml` and run `wally install` to download the p
 
 ```toml
 [dependencies]
-ComplexRegions = "vocksel/complex-regions@0.1.1"
+ComplexRegions = "vocksel/complex-regions@0.1.2"
 ```
 
 Make sure the resulting `Packages` folder is synced into your experience using a tool like [Rojo](https://github.com/rojo-rbx/rojo/).
