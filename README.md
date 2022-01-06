@@ -7,6 +7,8 @@ This is a package that allows you to define regions in an experience out of Base
 
 ![A character within a region composed of rectangles and a sphere](.moonwave/static/example.png)
 
+Make a change
+
 ## Usage
 
 ```lua
@@ -40,8 +42,9 @@ Make sure the resulting `Packages` folder is synced into your experience using a
 
 ### Roblox Studio
 
-* Download a copy of the rbxm from the [releases page](https://github.com/vocksel/complex-regions/releases/latest) under the Assets section.
-* Drag and drop the file into Roblox Studio to add it to your experience.
+- Download a copy of the rbxm from the [releases page](https://github.com/vocksel/complex-regions/releases/latest) under the Assets section.
+- Drag and drop the file into Roblox Studio to add it to your experience.
+
 ## Documentation
 
 You can find the documentation [here](https://vocksel.github.io/complex-regions).
